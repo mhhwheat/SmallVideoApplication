@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MovieRecorderView">
+        <attr name="is_open_camera" format="boolean"/>
+        <attr name="record_max_time" format="integer"/>
+        <attr name="video_width" format="integer"/>
+        <attr name="video_height" format="integer"/>
+    </declare-styleable>
+</resources>
