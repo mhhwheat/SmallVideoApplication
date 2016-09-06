@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mRecordView=(MovieRecorderView)findViewById(R.id.movieRecorderView);
+        mShootBtn=(Button)findViewById(R.id.shoot_button);
         mShootBtn.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent=new Intent();
             Log.d("TAG",mRecordView.getRecordFile().getAbsolutePath());
             intent.putExtra("path",mRecordView.getRecordFile().getAbsolutePath());
-            setResult(RESULT_OK);
+            setResult(RESULT_OK,intent);
         }
         finish();
     }
